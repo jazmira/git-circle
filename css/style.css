@@ -1,0 +1,84 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+.app {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.app__2{
+  display: flex;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.field {
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.field__circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  transition: transform .2s linear;
+} 
+
+.field__btn-down {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.field__btn-up {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.field__btn-left {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.field__btn-right {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn {
+  background-color: #ccc;
+  border: 2px solid #bbb;
+  cursor: pointer;
+}
+
+.btn-circle {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
